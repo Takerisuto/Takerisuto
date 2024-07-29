@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: solid;
+    list-style: none;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+}
+body{
+    background-color: rgb(1, 0, 20);
+}
+header{
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+.flotante_container{
+    display: block;
+    margin: auto;
+    align-items: center;
+    float: left;
+    padding: 25px 25px;
+    border-radius: 55px;
+    position: fixed;
+    right: 0px;
+    top: 30%;
+}
+.flotante img{
+    display: block;
+    padding: 10px;
+    justify-content: space-between;
+    width: 120px;
+    height: 120px;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.menu{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.menu .logo{
+    font-weight: 700;
+    font-size: 25px;
+    color: aliceblue;
+}
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 26px;
+    padding: 10px 35px;
+    color: aliceblue;
+    border-radius: 15px;
+    display: block;
+}
+.menu .navbar ul li a:hover{
+    background-color: rgb(29, 34, 75);
+}
+#menu{
+    display: none;
+}
+.menu .icono{
+    width: 40px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+.header-content{
+    display: flex;
+}
+.header-content img{
+    width: 550px;
+    margin-top: 100px;
+}
+.content{
+    padding: 150px 50px 0px 0px;
+}
+.content h1{
+    color: white;
+    font-size: 55px;
+    font-weight: 700px;
+    line-height: 70px;
+}
+.content p{
+    margin-top: 25px;
+    color: rgb(155, 238, 217);
+    font-size: 30px;
+}
+.servicios-container{
+    padding: 120px 50px;
+    display:flex;
+    justify-content:space-between;
+    text-align: center;
+    color: white;
+}
+.servicio{
+    padding: 25px;
+    margin: 150px 150px;
+    background-color: rgb(13, 6, 39);
+    border-radius: 45px;
+    outline: auto;
+}
+.servicio img{
+    border-radius: 55px;
+    width: 300px;
+    height: 480px;
+    margin-bottom: 15px;
+}
+.servicio button{
+    border-radius: 50px;
+    background-color: rgb(36, 13, 102);
+    font-size: 25px;
+    text-align: center;
+}
+.servicio a{
+    font-size: 40px;
+    color: rgb(118, 121, 124);
+}
