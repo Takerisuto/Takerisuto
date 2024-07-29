@@ -12,7 +12,7 @@
 }
 body{
     background-color: rgb(1, 0, 20);
-    page: 67%;
+    min-height: 67%;
 }
 header{
     min-height: 70vh;
@@ -40,6 +40,13 @@ header{
 .container{
     max-width: 1100px;
     margin: 0 auto;
+}
+.anuncio{
+    border-radius: 250px;
+    background-color: rgb(29, 40, 49);
+    padding: 50px 0px 50px 0px;
+    margin-top: auto;
+    align-items: center;
 }
 .menu{
     position: absolute;
@@ -137,7 +144,7 @@ header{
 }
 @media(max-width: 991px){
     .menu{
-        padding: 20px;
+        padding: 0px;
     }
     .menu label{
         display: initial;
@@ -158,29 +165,31 @@ header{
     }
     .menu .navbar ul li{
         margin: 10px;
-        padding: 0px 35px;
+        padding: 0px 50px;
     }
     #menu:checked ~ .navbar{
         display: initial;
     }
     header{
         height: 0vh;
-        padding: 600px 0px 340px 0px;
+        padding: 640px 0px 340px 0px;
     }
     .header-content{
         flex-direction: column;
         text-align: center;
         align-items: center;
-        padding: 0px 30px;
+        padding: 0px 0px;
     }
     .content{
         padding: 0;
     }
     .content h1{
+        font-size: 40px;
         margin-top: 0;
     }
     .content p{
         margin-top: 15px;
+        font-size: 25px;
     }
     .btn{
         margin-top: 15px;
@@ -190,10 +199,39 @@ header{
         width: 200px;
     }
     .servicios-container{
+        align-content: center;
+        align-items: center;
         flex-direction: column;
-        padding: 30px 30px 0px 0px;
+        padding: 50px;
     }
     .servicio{
         margin-bottom: 30px;
+    }
+    .servicio img{
+        align-items: center;
+    }
+    .servicio button{
+        margin-top: 15px;
+        padding: auto;
+    }
+    .anuncio{
+        margin-top: 150px;
+        content: initial;
+        display: block;
+        margin-bottom: auto;
+        align-items: center;
+        padding: 0px 100px 0px 0px;
+    }
+    .servicio a{
+        align-items: center;
+        font-size: 25px;
+    }
+    .flotante_container{
+        padding: 1px;
+    }
+    .flotante img{
+        visibility: hidden 50%;
+        max-width: 75px;
+        max-height: 75px;
     }
 }
