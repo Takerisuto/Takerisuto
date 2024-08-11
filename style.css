@@ -10,221 +10,85 @@
     font-family: "Edu AU VIC WA NT Hand", cursive;
     font-optical-sizing: auto;
 }
-body{
-    background-color: rgb(1, 0, 20);
-    min-height: 67%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-header{
-    min-height: 70vh;
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #252661;
+    color: #ffffff;
+    padding: 10px 0;
     display: flex;
-    align-items: center;
+    
 }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
 .flotante_container{
     display: block;
     margin: auto;
     align-items: center;
-    float: left;
+    float: right;
     padding: 25px 25px;
     border-radius: 55px;
     position: fixed;
-    right: 0px;
+    left: 0px;
     top: 30%;
 }
 .flotante img{
     display: block;
     padding: 10px;
     justify-content: space-between;
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
 }
-.container{
-    max-width: 1100px;
-    margin: 0 auto;
+
+.tab-content {
+    display: none;
+    text-align: center;
 }
-.anuncio{
-    border-radius: 250px;
-    background-color: rgb(29, 40, 49);
-    padding: 50px 0px 50px 0px;
-    margin-top: auto;
-    align-items: center;
-}
-.menu{
-    position: absolute;
-    top: 10px;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-}
-.menu .logo{
-    font-weight: 700;
-    font-size: 25px;
-    color: aliceblue;
-}
-.menu .navbar ul li{
-    position: relative;
-    float: left;
-}
-.menu .navbar ul li a{
-    font-size: 26px;
-    padding: 10px 35px;
-    color: aliceblue;
-    border-radius: 15px;
+
+.tab-content.active {
     display: block;
 }
-.menu .navbar ul li a:hover{
-    background-color: rgb(29, 34, 75);
-}
-#menu{
-    display: none;
-}
-.menu .icono{
-    width: 80px;
-}
-.menu label{
-    cursor: pointer;
-    display: none;
-}
-.header-content{
-    padding: 50px 50px;
-    display: flex;
-    justify-content:space-between
-}
-.header-content img{
-    width: 550px;
-    margin-top: 100px;
-}
-.content{
-    padding:300px 50px 50px 50px;
-}
-.content h1{
-    color: white;
-    font-size: 55px;
-    font-weight: 700px;
-    line-height: 70px;
-}
-.content p{
-    margin-top: 150px;
-    color: rgb(155, 238, 217);
-    font-size: 30px;
-}
-.servicios-container{
-    height: auto;
-    width: auto;
-    padding: 120px 50px;
-    display:flex;
-    justify-content:space-between;
-    text-align: center;
-    color: white;
-}
-.servicio{
-    padding: 25px;
-    margin: 150px 150px;
-    background-color: rgb(13, 6, 39);
-    border-radius: 45px;
-    outline: auto;
-}
-.servicio img{
-    border-radius: 55px;
-    width: 300px;
-    height: 480px;
-    margin-bottom: 15px;
-}
-.servicio button{
-    border-radius: 50px;
-    background-color: rgb(36, 13, 102);
-    font-size: 25px;
-    text-align: center;
-}
-.servicio a{
-    font-size: 40px;
-    color: rgb(118, 121, 124);
-}
-@media(max-width: 991px){
-    .menu{
-        padding: 0px;
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction:inherit;
     }
-    .menu label{
-        display: initial;
-    }
-    .menu .navbar{
-        position: absolute;
-        top: 100%;
-        left: 0%;
-        right: 0%;
-        background-color: rgb(8, 0, 54);
-        display: none;
-        border-radius: 50px;
-        border-collapse: collapse;
-        border: 1px solid aliceblue;
-    }
-    .menu .navbar ul li{
-        width: 100%; 
-    }
-    .menu .navbar ul li{
-        margin: 10px;
-        padding: 0px 50px;
-    }
-    #menu:checked ~ .navbar{
-        display: initial;
-    }
-    header{
-        height: 0vh;
-        padding: 640px 0px 340px 0px;
-    }
-    .header-content{
-        flex-direction: column;
-        text-align: center;
+
+    nav ul li {
+        margin: 10px 10px;
         align-items: center;
-        padding: 0px 0px;
-    }
-    .content{
-        padding: 0;
-    }
-    .content h1{
-        font-size: 40px;
-        margin-top: 0;
-    }
-    .content p{
-        margin-top: 15px;
-        font-size: 25px;
-    }
-    .btn{
-        margin-top: 15px;
-    }
-    .header-content img{
-        margin-top: 45px;
-        width: 200px;
-    }
-    .servicios-container{
-        align-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 50px;
-    }
-    .servicio{
-        margin-bottom: 30px;
-    }
-    .servicio img{
-        align-items: center;
-    }
-    .servicio button{
-        margin-top: 15px;
-        padding: auto;
-    }
-    .anuncio{
-        margin-top: 150px;
-        content: initial;
-        display: block;
-        margin-bottom: auto;
-        align-items: center;
-        padding: 0px 100px 0px 0px;
-    }
-    .servicio a{
-        align-items: center;
-        font-size: 25px;
     }
     .flotante_container{
         padding: 1px;
