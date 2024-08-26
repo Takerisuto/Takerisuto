@@ -96,28 +96,6 @@ section{
     padding-top: 9,5rem;
     padding-bottom: 2rem;
 }
-
-.flotante_container{
-    margin: 0 auto;
-    justify-content: center;
-    display: block;
-    float: left;
-    padding: 0px;
-    border-radius: 25px;
-    position: fixed;
-    right: 0px;
-    top: 30%;
-}
-.flotante_container a{
-    margin: 1px;
-}
-.flotante img{
-    display: block;
-    padding: 10px;
-    margin: 0;
-    width: 90px;
-    height: 90px;
-}
 .Inicio{
     display: flex;
     align-items: center;
@@ -159,7 +137,6 @@ section{
     align-items: center;
     display: flex;
     justify-content: center;
-    margin: 5px;
 }
 .contacto h1{
     text-align: center;
@@ -411,11 +388,11 @@ footer{
         align-items: center;
         padding: 0px 10px; 
         font-size: 20px;
-        margin-left: 75px;
     }
     .contacto p{
         font-size: 20px;
         padding: 10px;
+        margin: 20px;
     }
     .compras_container{
         display: grid;
@@ -449,8 +426,8 @@ footer{
         margin: 2px;
     }
     .content-active{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
+        display: block;
+        justify-content: center;
     }
     .option{
         padding: 0px 0px;
@@ -468,7 +445,7 @@ footer{
         font-size: 20px;
     }
     .T{
-        font-size: 18px;
+        font-size: 28px;
         background: gainsboro;
         color: #1c5e5e;
         padding: 0px 10px;
@@ -488,9 +465,12 @@ footer{
         color: #ffffff;
         border-radius: 12px;
     }
+    .content{
+        padding: 10px;
+    }
     .content img{
-        height: 160px;
-        margin: 10px;
+        height: 110px;
+        margin: 2px;
         border-radius: 30px;
     }
 }
