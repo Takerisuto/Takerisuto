@@ -473,4 +473,11 @@ footer{
         margin: 2px;
         border-radius: 30px;
     }
+    .banner div{
+        justify-content: center;
+        display: block;
+        align-items: center;
+        font-size: 20px;
+        padding: 10px;
+    }
 }
