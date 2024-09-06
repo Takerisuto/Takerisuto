@@ -130,6 +130,7 @@ section{
 }
 .btn:hover{
     transform: scale(1.1);
+    transition: all .2s linear;
 }
 .contacto{
     padding: 1.5rem;
@@ -223,17 +224,37 @@ footer{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
 }
 .producto a{
+    text-align: center;
     font-size: 25px;
-    border-radius: 9px;
+    border-radius: 12px;
     background-color: #f5ff9b;
-    padding: 0px 7.5px;
+    padding: 5px;
     color: #805301;
     border: 2px solid #000000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
 }
 .producto img{
     height: 220px;
     border-radius: 10px;
     border: 3.5px solid rgb(36, 102, 64);
+}
+.ba{
+    display: flex;
+    justify-content: center;
+}
+.ba a{
+    text-align: center;
+    background-color: rgb(78, 169, 192);
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 8px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
+}
+.btna:hover{
+    transform: scale(1.1);
+    transition: all .2s linear;
 }
 @media (max-width: 768px){
     html{
