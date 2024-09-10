@@ -328,10 +328,11 @@ footer{
         grid-template-columns: repeat(2,1fr);
     }
     .producto{
-        margin: 6px;
+        margin: 12px;
     }
     .producto img{
         height: 140px;
+        width: 140px;
     }
     .apoyo_container img{
         margin: 1px;
